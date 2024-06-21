@@ -1,0 +1,25 @@
+.article-card {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article-content {
+  padding: 12px;
+}
+
+.article-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
