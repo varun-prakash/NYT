@@ -3,7 +3,7 @@ import "./Article.css"; // Import the CSS file for Article styles
 
 interface ArticleProps {
   title: string;
-  imageUrl: string;
+  imageUrl?: string;
 }
 
 const Article: React.FC<ArticleProps> = ({ title, imageUrl }) => {

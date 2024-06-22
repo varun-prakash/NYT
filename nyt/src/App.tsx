@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import Article from "./Components/Article"; // Adjust path as per your project structure
+import { useEffect, useState } from "react";
+import Article from "./Components/Article/Article"; // Adjust path as per your project structure
 import { getMostPopularArticle } from "./api"; // Adjust path as per your project structure
+import "./App.css"; // Import the CSS file for custom styles
 
 interface ArticleType {
   title: string;
@@ -29,17 +30,19 @@ function App() {
   }, []);
 
   return (
-    <div className="container mx-auto py-8">
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {articles.map((article, index) => (
-          <Article
-            key={index}
-            title={article.title}
-            imageUrl={article.media[0]["media-metadata"][2].url}
-          />
-        ))}
+    <>
+      <div className="container">
+        <div className="articles-grid">
+          {articles.map((article, index) => (
+            <Article
+              key={index}
+              title={article.title}
+              imageUrl={article.media[0]["media-metadata"][2].url}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
