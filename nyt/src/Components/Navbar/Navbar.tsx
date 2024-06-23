@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
           <Link to="/Most-Popular-Articles">Most Popular Articles</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/books">Books</Link>
+          <Link to="/Most-Popular-Books">Most-Popular-Books</Link>
         </li>
         <li className="navbar-item">
           <Link to="/reviews">Reviews</Link>
