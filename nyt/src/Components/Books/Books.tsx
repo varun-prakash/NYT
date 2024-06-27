@@ -17,7 +17,7 @@ const Books = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const res = await getLatestBooks("7Ruw7RZTs6A6VaRjqrlLty2wlI7WJ1tR");
+        const res = await getLatestBooks("");
         setBooks(res);
       } catch (error) {
         console.error("Error fetching books:", error);

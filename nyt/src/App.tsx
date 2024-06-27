@@ -46,9 +46,7 @@ function App() {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const res = await getMostPopularArticle(
-          "7Ruw7RZTs6A6VaRjqrlLty2wlI7WJ1tR"
-        );
+        const res = await getMostPopularArticle();
         setArticles(res);
       } catch (error) {
         console.error("Error fetching articles:", error);
